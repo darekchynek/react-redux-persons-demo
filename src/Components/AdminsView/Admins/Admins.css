@@ -1,0 +1,12 @@
+.Admin {
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    height: 110px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font: inherit;
+    border: 1px solid black;
+}

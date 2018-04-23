@@ -1,11 +1,19 @@
 .App {
   text-align: center;
-  padding: 20px;
 }
 
+.admins {
+  background-color: whitesmoke;
+  height: 99.9vh;
+}
 .h1-users {
     text-align: center;
     margin-bottom: 40px;
+}
+
+.row { 
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .red { 

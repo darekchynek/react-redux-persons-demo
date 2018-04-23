@@ -4,9 +4,9 @@ export let randomUid = Math.round((Math.random() * 100 ) + 1);
 
 const defaultPersons = () => {
   return [
-      { name: "Kamil", age: 25, id: randomUid + 'a' + 0 },
-      { name: "Mariusz", age: 35, id: randomUid + 'a' + 1},
-      { name: "Janusz", age: 15, id: randomUid + 'a' + 2 },
+      { name: "Kamil", age: 25, id: randomUid + 'a' + 0, role: 'admin' },
+      { name: "Mariusz", age: 35, id: randomUid + 'a' + 1, role: 'user'},
+      { name: "Janusz", age: 15, id: randomUid + 'a' + 2, role: 'user'},
   ];
 };
 
