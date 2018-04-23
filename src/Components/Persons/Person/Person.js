@@ -1,25 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Class from "./Person.css";
 
-class Person extends Component {
-  constructor(props) {
-    super(props);
-    console.log("[Person.js] Inside Constructor", props);
-  }
-
-  componentWillMount() {
-    //console.log("[Person.js] Inside ComponentWillMount");
-  }
-
-  componentDidMount() {
-    //console.log("[Person.js] Inside ComponentDidMount");
-  }
-
-  componentWillReceiveProps() {
-    //console.log("[UPDATE Person.js] Inside componentWillReceiveProps");
-  }
-
-  render() {
+const person = (props) => {
     const inputStyle = {
       textAlign: "center",
       padding: "4px",
@@ -28,25 +10,24 @@ class Person extends Component {
 
     return (
       <div className={Class.Person}>
-        <h4 onClick={this.props.click}>
+        <h4 onClick={props.click}>
           {" "}
-          I'm a {this.props.name} and I'm {this.props.age} old
+          I'm a {props.name} and I'm {props.age} old
         </h4>
         <input
           style={inputStyle}
-          onChange={this.props.changed}
-          value={this.props.name}
+          onChange={props.changed}
+          value={props.name}
           type="text"
         />
         <input
           style={inputStyle}
-          onChange={this.props.changedAge}
-          value={this.props.age}
+          onChange={props.changedAge}
+          value={props.age}
           type="number"
         />
       </div>
     );
   }
-}
 
-export default Person;
+export default person;
