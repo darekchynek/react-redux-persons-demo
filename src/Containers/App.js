@@ -73,11 +73,11 @@ class App extends Component {
     return (
       <div className={Class.App}>
         <div className={Class.row}>
-          <div className={Class.admins + " col-lg-3"}>
+          <div className={Class.admins + " col-lg-2"}>
             <AdminsView />
             {admins}
           </div>
-          <div className="col-lg-9">
+          <div className="col-lg-10">
             <Cockpit
               disabled={!this.props.filter.showPersons}
               button={this.btnClass}

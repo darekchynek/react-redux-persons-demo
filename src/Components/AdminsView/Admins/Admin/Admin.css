@@ -1,8 +1,7 @@
 .Admin {
-    text-align: center;
-    padding: 10px;
-    width: 90%;
-    height: 110px;
+    text-align: left;
+    width: 95%;
+    height: 90px;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -12,5 +11,12 @@
 }
 
 .photo {
-    width: 90px;
+    width: 75px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.info {
+    width: 169px;
+    display: inline-block;
 }
