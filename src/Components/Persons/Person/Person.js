@@ -8,26 +8,17 @@ const person = (props) => {
       margin: "10px"
     };
 
-    return (
-      <div className={Class.Person}>
-        <h4 onClick={props.click}>
+    return <div className={Class.Person}>
+        <h4>
           {" "}
-          I'm a {props.name} and I'm {props.age} old
+          {props.name}, {props.age} old, Role: {props.role}
         </h4>
-        <input
-          style={inputStyle}
-          onChange={props.changed}
-          value={props.name}
-          type="text"
-        />
-        <input
-          style={inputStyle}
-          onChange={props.changedAge}
-          value={props.age}
-          type="number"
-        />
-      </div>
-    );
+        <input style={inputStyle} onChange={props.changed} value={props.name} type="text" />
+        <input style={inputStyle} onChange={props.changedAge} value={props.age} type="number" />
+        <button type="button" className="btn btn-danger" onClick={props.click}>
+          Delete
+        </button>
+      </div>;
   }
 
 export default person;

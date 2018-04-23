@@ -3,7 +3,7 @@ import { SHOW_PERSONS, SHOW_NEW_PERSON } from "../constants";
 const defaultFilter = () => {
   return {
       otherState: "some other value",
-      showPersons: false,
+      showPersons: true,
       showAddPerson: false
     };
 };

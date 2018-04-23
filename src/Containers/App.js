@@ -6,7 +6,7 @@ import AdminsView from '../Components/AdminsView/AdminsView';
 import Admins from '../Components/AdminsView/Admins/Admins';
 import { connect } from 'react-redux';
 import { showPersons, showNewPerson, addPerson, changeName, changeAge, deletePerson } from '../Store/actions';
-import { randomUid } from '../Store/Reducers/persons';
+import { randomUid } from '../Store/Reducers/list';
 
 class App extends Component {
   constructor(props) {

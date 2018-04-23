@@ -9,6 +9,7 @@ const persons = (props) => {
           click={() => props.delete(person.id)}
           name={person.name}
           age={person.age}
+          role={person.role}
           changed={event => props.nameHandler(event, person.id)}
           changedAge={event => props.ageHandler(event, person.id)}
         />
