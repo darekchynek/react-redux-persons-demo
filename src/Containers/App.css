@@ -5,7 +5,13 @@
 .admins {
   background-color: whitesmoke;
   height: 99.9vh;
+  position: fixed;
+  width: 317px;
 }
+.page {
+  margin-left: 317px;
+}
+
 .h1-users {
     text-align: center;
     margin-bottom: 40px;

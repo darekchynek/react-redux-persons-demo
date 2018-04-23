@@ -72,12 +72,11 @@ class App extends Component {
 
     return (
       <div className={Class.App}>
-        <div className={Class.row}>
-          <div className={Class.admins + " col-lg-2"}>
+          <div className={Class.admins}>
             <AdminsView />
             {admins}
           </div>
-          <div className="col-lg-10">
+          <div className={Class.page}>
             <Cockpit
               disabled={!this.props.filter.showPersons}
               button={this.btnClass}
@@ -88,7 +87,6 @@ class App extends Component {
             {persons}
           </div>
         </div>
-      </div>
     );
   }
 }

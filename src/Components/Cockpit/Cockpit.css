@@ -11,6 +11,10 @@
   font-weight: bold;
 }
 
+.Cockpit { 
+  padding: 20px;
+}
+
 .Cockpit button { 
   padding: 8px;
   color: black;
