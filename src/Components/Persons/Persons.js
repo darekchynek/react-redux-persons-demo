@@ -6,11 +6,11 @@ const persons = (props) => {
       return (
         <Person
           key={person.id}
-          click={() => this.props.delete(person.id)}
+          click={() => props.delete(person.id)}
           name={person.name}
           age={person.age}
-          changed={event => this.props.nameHandler(event, person.id)}
-          changedAge={event => this.props.ageHandler(event, person.id)}
+          changed={event => props.nameHandler(event, person.id)}
+          changedAge={event => props.ageHandler(event, person.id)}
         />
       );
     });
