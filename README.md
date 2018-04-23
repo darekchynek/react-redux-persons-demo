@@ -1,10 +1,10 @@
-## New Project React-Redux
+# New Project React-Redux
 
 My React-Redux project to learn with CSS Modules.
 
 
-## Start
+# Start
 
-npm install
+`npm install`
 
-npm run start
+`npm run start`
